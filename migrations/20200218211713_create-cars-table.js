@@ -14,6 +14,5 @@ exports.up = function(knex) {
       tbl.string("Title", 128)
   })
 };
-exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('cars')
-};
+exports.down = function(knex)
+    {return knex.schema.dropTableIfExists('cars')};
